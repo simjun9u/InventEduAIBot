@@ -1,0 +1,14 @@
+<html>
+<body>
+    <h1 class="test""></h1>
+<script>
+    const test = document.querySelector('.test');
+    const synth = window.speechSynthesis;
+    const voices = synth.getVoices(); //200쯤? rate1.2 pitch?
+//speech.voice = voices[200];
+    var i=200;
+// console.log(voices[i].lang+" . "+voices[i].name);
+    test.textContent = voices[i].lang+" . "+voices[i].name;
+</script>
+</body>
+</html>
